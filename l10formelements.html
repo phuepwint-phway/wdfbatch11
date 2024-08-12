@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Elements</title>
+</head>
+<body>
+
+	<h3>Form Elements</h3>
+
+	<fieldset>
+
+		<legend><h4><i>This is sample form</i></h4></legend>
+
+		<form action="" method="GET" enctype="multipart/form-data ">
+			
+			<label for="firstname">First Name</label>
+			<input type="text" name="firstname" id="firstname" class="firstname" minlength="3" maxlength="5" placeholder="Enter your first name" autofocus value="Phue" readonly />
+
+
+			<br/><br/>
+
+
+			<label for="lastname">Last Name</label>
+			<input type="text" name="lastname" id="lastname" class="lastname" placeholder="Enter your last name" value="Phway" disabled />
+
+
+			<br/><br/>
+
+
+			<label for="age">Age</label>
+			<input type="number" name="age" id="age" class="age" placeholder="Enter your age" min="18" max="60" />
+
+
+			<br/><br/>
+
+
+			<label for="password">Password</label>
+			<input type="password" name="password" id="password" class="password" placeholder="Enter password" required />
+
+
+			<br/><br/>
+
+
+			<label for="gender">Gender</label>
+
+			<input type="radio" name="gender" id="gendermale" class="" value="0" /><label for="gendermale">Male</label>
+
+			<input type="radio" name="gender" id="genderfemale" class="" value="1" /><label for="genderfemale">Female</label>
+
+			<input type="radio" name="gender" id="genderother" class="" value="2" /><label for="genderother">Other</label>
+
+
+			<br/><br/>
+
+
+			<label for="fruit">Fruit</label>
+
+			<input type="radio" name="fruit" id="fruitapple" class="" value="fruitapp" /><label for="fruitapple">Apple</label>
+
+			<input type="radio" name="fruit" id="fruitorange" class="" value="fruitorg" /><label for="fruitorange">Orange</label>
+
+			<input type="radio" name="fruit" id="fruitpineapple" class="" value="fruitpineapp" checked /><label for="fruitpineapple">Pineapple</label>
+
+
+			<br/><br/>
+
+
+			<label for="favouritecolor">Choose your favourite color</label>
+
+			<input type="checkbox" name="favouritecolor" id="colorgreen" class="" value="1" /><label>Green</label>
+
+			<input type="checkbox" name="favouritecolor" id="colorblue" class="" value="2" checked /><label>Blue</label>
+
+			<input type="checkbox" name="favouritecolor" id="colorred" class="" value="3" checked /><label>Red</label>
+
+			<input type="checkbox" name="favouritecolor" id="coloryellow" class="" value="4" /><label>Yellow</label>
+
+			<input type="checkbox" name="favouritecolor" id="colorpurple" class="" value="5" /><label>Purple</label>
+
+			<input type="checkbox" name="favouritecolor" id="colorpink" class="" value="6" /><label>Pink</label>
+
+
+			<br/><br/>
+
+
+			<label for="country">Citizen</label>
+
+			<select name="country" id="country" class="">
+				<option selected disabled>Choose a country</option>
+				<option value="mm">Myanmar</option>
+				<option value="thi">Thailand</option>
+				<option value="php">Philippine</option>
+				<option value="slk">Srilanka</option>
+				<option value="sg">Singapore</option>
+				<option value="loa">Loas</option>
+			</select>
+
+
+			<br/><br/>
+
+
+			<label>Role</label>
+
+			<select name="role[]" id="role" class="" multiple>
+				<option selected disabled>choose a role</option>
+				<option value="1">Manager</option>
+				<option value="2">Editor</option>
+				<option value="3">Supervisor</option>
+				<option value="4">Sales</option>
+			</select>
+
+
+			<br/><br/>
+
+
+			<label for="dob">DOB</label>
+			<input type="date" name="dob" id="dob" class="" />
+
+
+			<br/><br/>
+
+
+			<label for="bookingtime">Booking Time</label>
+			<input type="time" name="bookingtime" id="bookingtime" class="" />
+
+
+			<br/><br/>
+
+
+			<label for="appointment">Appointment</label>
+			<input type="datetime-local" name="appointment" id="appointment" class="" />
+
+
+			<br/><br/>
+
+
+			<label for="volume">Volume</label>
+			<input type="range" name="volume" id="volume" class="" min="0" max="100" value="10" step="20" />
+
+
+			<br/><br/>
+
+
+			<label for="nrc">NRC</label>
+			<input type="file" name="nrc" id="nrc" class="" accept="image/*" capture="user" multiple />
+
+
+			<br/><br/>
+
+
+			<label for="vdo">Video</label>
+			<input type="file" name="vdo" id="vdo" class="" accept="video/*" capture="environment" multiple />
+
+
+			<br/><br/>
+
+
+			<label for="email">Email</label>
+			<input type="email" name="email" id="email" class="" placeholder="Enter your email" />
+
+
+			<br/><br/>
+
+
+			<label for="bio">Bio</label>
+			<textarea name="bio" id="bio" class="" rows="10" spellcheck="true" placeholder="Enter your bio"></textarea>
+
+
+			<br/><br/>
+
+
+			<input type="time" name="test" id="test" class="" hidden />
+			<input type="hidden" name="lat" id="lat" class="" />
+
+
+			<br/><br/>
+
+
+			<input type="reset" name="cancels" id="cancels" class="" value="Cancel" />
+			<input type="button" name="logins" id="logins" class="" value="login" />
+			<input type="submit" name="singups" id="signups" class="" value="singup" />
+
+
+			<br/><br/>
+
+
+			<button type="reset" name="cancel" id="cancel" class="">Cancel</button>
+			<button type="button" name="register" id="register" class="">Register</button>
+			<button type="submit" name="signup" id="signup" class="">Signup</button>
+
+
+			<br/><br/>
+
+
+
+		</form>
+
+	</fieldset>
+
+</body>
+</html>
+
+
+<!-- 
+	overwrite
+	override 
+-->
+
+
+
+
+<!-- autofocus is standalone attribute -->
+
+
+<!-- 
+Tag
+Self Closing Tag
+Elements
+
+Attributes
+Stand Alone Attributes
+
+autofocus
+selected
+checked
+disabled
+multiple
+hidden
+required
+readonly
+hidden
+
+ -->
