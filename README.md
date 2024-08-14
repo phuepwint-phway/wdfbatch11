@@ -28,5 +28,9 @@ index.html<br/>
 /images<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;image.jpg<br/>
 
+## You can try it
+
+https://simple-pages.netlify.app/
+
 ## Contact
 For any questions or feedback, feel free to [email me](mailto:your-email@gmail.com).
